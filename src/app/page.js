@@ -54,7 +54,7 @@ export default function Home() {
         </h1>
 
         <h2 className={styles.subtitle}>
-          Make scanned PDFs selectable — free, instant, private
+          Make scanned PDFs selectable. Free, Instant, Private
         </h2>
 
         <p className={styles.description}>
@@ -122,14 +122,14 @@ export default function Home() {
                 <div className={styles.stepNum}>1</div>
                 <div className={styles.stepBody}>
                   <strong>Upload your scanned PDF</strong>
-                  <p>Drag and drop or browse for any image-based PDF — the kind where you can't highlight or copy text. Files stay entirely on your device.</p>
+                  <p>Drag and drop or browse for any image-based PDF: the kind where you can't highlight or copy text. Files stay entirely on your device.</p>
                 </div>
               </li>
               <li className={styles.step}>
                 <div className={styles.stepNum}>2</div>
                 <div className={styles.stepBody}>
                   <strong>Jump to the page you need</strong>
-                  <p>Navigate to any page using the page controls. You don't have to wait for the whole document — OCR runs only on the page you're viewing.</p>
+                  <p>Navigate to any page using the page controls. You don't have to wait for the whole document. OCR runs only on the page you're viewing.</p>
                 </div>
               </li>
               <li className={styles.step}>
