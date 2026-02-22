@@ -1,5 +1,4 @@
 import './globals.css';
-
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -9,7 +8,7 @@ export const metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: 'OCR-PDFReader - Make Any Scanned PDF Selectable',
+    default: 'OCR-PDFReader: Make Any Scanned PDF Selectable',
     template: '%s | OCR-PDFReader',
   },
   description:
@@ -34,11 +33,11 @@ export const metadata = {
     url: BASE_URL,
     title: 'OCR-PDFReader: Make Any Scanned PDF Selectable',
     description:
-      'Free in-browser OCR. Upload a scanned PDF, jump to any page, and extract selectable text instantly. No login, no limits, no server upload.',
+      'Free in-browser OCR. Upload a scanned PDF, jump to any page, and extract selectable text instantly. No login, no limits, no uploads to any server.',
     siteName: 'OCR-PDFReader',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.png', // add a 1200x630 image to /public
         width: 1200,
         height: 630,
         alt: 'OCR-PDFReader: Make any scanned PDF selectable',
@@ -57,6 +56,14 @@ export const metadata = {
   alternates: {
     canonical: BASE_URL,
   },
+  verification: {
+    google: 'J3MvJXhBKEpePIRQ5XGEdjN5gBK0_Vxd8RWAjh13rgQ',
+  },
+
+  verification: {
+    google: 'J3MvJXhBKEpePIRQ5XGEdjN5gBK0_Vxd8RWAjh13rgQ',
+  },
+
   robots: {
     index: true,
     follow: true,
@@ -100,7 +107,7 @@ export default function RootLayout({ children }) {
                 'On-demand page OCR',
                 'Side-by-side original and text view',
                 'Supports 12+ languages',
-                'No file uploads, fully in-browser',
+                'No file uploads. Fully in-browser',
                 'No account required',
                 'Free forever',
               ],
