@@ -59,7 +59,7 @@ export default function Home() {
 
         <p className={styles.description}>
           Upload any scanned or image-based PDF and extract selectable, copyable text
-          directly in your browser. No account, no server uploads, no limits —
+          directly in your browser. No account, no server uploads, no limits -
           jump to the page you need and OCR runs on demand.
           Supports 10+ languages.
         </p>
