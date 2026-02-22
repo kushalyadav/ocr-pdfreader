@@ -227,7 +227,7 @@ export default function PDFViewer({ file, onReset }) {
       <header className={styles.topbar}>
         <div className={styles.topLeft}>
           <button className={styles.backBtn} onClick={onReset}>← Back</button>
-          <div className={styles.appName}>OCR–PDFReader</div>
+          <div className={styles.appName}>OCR-PDFReader</div>
           <div className={styles.fileChip} title={file.name}>
             <span className={styles.fileChipIcon}>PDF</span>
             <span className={styles.fileChipName}>{file.name}</span>

@@ -47,19 +47,19 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.hero}>
-        <div className={styles.badge}>100% In-Browser · No Login · Free Forever</div>
+        <div className={styles.badge}>100% In-Browser · No Uploads · Free Forever</div>
 
         <h1 className={styles.title}>
           OCR<span className={styles.dash}>-</span>PDFReader
         </h1>
 
         <h2 className={styles.subtitle}>
-          Make scanned PDFs selectable. Free. Instant. Private.
+          Make scanned PDFs selectable — free, instant, private
         </h2>
 
         <p className={styles.description}>
           Upload any scanned or image-based PDF and extract selectable, copyable text
-          directly in your browser. No account, no server uploads, no limits -
+          directly in your browser. No account, no server uploads, no limits —
           jump to the page you need and OCR runs on demand.
           Supports 10+ languages.
         </p>
@@ -92,15 +92,15 @@ export default function Home() {
 
         <section aria-label="Features" className={styles.features}>
           <div className={styles.feature}>
-            <span className={styles.featureIcon} aria-hidden="true">✓</span>
+            <span className={styles.featureIcon} aria-hidden="true">✔</span>
             <span>Instant page render</span>
           </div>
           <div className={styles.feature}>
-            <span className={styles.featureIcon} aria-hidden="true">✓</span>
+            <span className={styles.featureIcon} aria-hidden="true">✔</span>
             <span>OCR only when you need it</span>
           </div>
           <div className={styles.feature}>
-            <span className={styles.featureIcon} aria-hidden="true">✓</span>
+            <span className={styles.featureIcon} aria-hidden="true">✔</span>
             <span>Your file never leaves your device</span>
           </div>
         </section>
@@ -122,14 +122,14 @@ export default function Home() {
                 <div className={styles.stepNum}>1</div>
                 <div className={styles.stepBody}>
                   <strong>Upload your scanned PDF</strong>
-                  <p>Drag and drop or browse for any image-based PDF - the kind where you can't highlight or copy text. Files stay entirely on your device.</p>
+                  <p>Drag and drop or browse for any image-based PDF — the kind where you can't highlight or copy text. Files stay entirely on your device.</p>
                 </div>
               </li>
               <li className={styles.step}>
                 <div className={styles.stepNum}>2</div>
                 <div className={styles.stepBody}>
                   <strong>Jump to the page you need</strong>
-                  <p>Navigate to any page using the page controls. You don't have to wait for the whole document - OCR runs only on the page you're viewing.</p>
+                  <p>Navigate to any page using the page controls. You don't have to wait for the whole document — OCR runs only on the page you're viewing.</p>
                 </div>
               </li>
               <li className={styles.step}>
