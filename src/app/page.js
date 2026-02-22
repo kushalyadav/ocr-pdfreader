@@ -122,7 +122,7 @@ export default function Home() {
                 <div className={styles.stepNum}>1</div>
                 <div className={styles.stepBody}>
                   <strong>Upload your scanned PDF</strong>
-                  <p>Drag and drop or browse for any image-based PDF — the kind where you can't highlight or copy text. Files stay entirely on your device.</p>
+                  <p>Drag and drop or browse for any image-based PDF - the kind where you can't highlight or copy text. Files stay entirely on your device.</p>
                 </div>
               </li>
               <li className={styles.step}>

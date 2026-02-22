@@ -52,7 +52,7 @@
 .appName {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
-  font-size: 0.5rem;
+  font-size: 0.78rem;
   letter-spacing: 0.02em;
   white-space: nowrap;
   color: var(--text-dim);
@@ -299,10 +299,8 @@
   flex-shrink: 0;
 }
 
-/* ── Canvas (high res, display constrained by CSS) ── */
 .canvas {
   display: block;
-  /* Render at 2.5x but display at a readable size */
   width: 100%;
   max-width: 700px;
   height: auto;
@@ -310,7 +308,6 @@
   border-radius: 3px;
 }
 
-/* ── OCR text pane ── */
 .textContent {
   width: 100%;
   max-width: 700px;
@@ -328,7 +325,6 @@
   cursor: text;
 }
 
-/* ── Empty state ── */
 .emptyState {
   display: flex;
   flex-direction: column;
@@ -347,7 +343,6 @@
   opacity: 0.5;
 }
 
-/* ── Copy button ── */
 .copyBtnInline {
   background: var(--accent-soft);
   border: 1px solid rgba(90,90,255,0.3);
@@ -361,7 +356,6 @@
 }
 .copyBtnInline:hover { background: rgba(90,90,255,0.2); }
 
-/* ── Done pages legend ── */
 .legend {
   display: flex;
   flex-wrap: wrap;
@@ -389,10 +383,115 @@
   border-color: var(--success);
 }
 
-/* ── Responsive ── */
 @media (max-width: 700px) {
   .splitView { flex-direction: column; }
   .divider { width: 100%; height: 1px; }
   .appName { display: none; }
   .fileChipName { max-width: 100px; }
+}
+
+.canvasWrap {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.textWord {
+  position: absolute;
+  color: transparent;
+  background: transparent;
+  white-space: pre;
+  cursor: text;
+  pointer-events: all;
+  user-select: text;
+  overflow: visible;
+  transform-origin: top left;
+}
+
+.textWord::selection {
+  background: rgba(90, 90, 255, 0.35);
+  color: transparent;
+}
+
+.textWord::selection {
+  background: rgba(90, 90, 255, 0.35);
+  color: transparent;
+}
+
+.paneLabelHint {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  margin-left: 0.4rem;
+}
+
+.copyBtnTop {
+  background: var(--accent-soft);
+  border: 1px solid rgba(90,90,255,0.3);
+  color: var(--accent);
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.copyBtnTop:hover { background: rgba(90,90,255,0.2); }
+
+.viewToggle {
+  display: flex;
+  gap: 2px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.toggleBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.toggleBtn:hover { color: var(--text); }
+
+.toggleActive {
+  background: var(--accent);
+  color: white !important;
+}
+
+.textContent {
+  width: 100%;
+  max-width: 700px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.85;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  user-select: text;
+  cursor: text;
 }

@@ -9,11 +9,11 @@ export const metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: 'OCR-PDFReader — Make Any Scanned PDF Selectable',
+    default: 'OCR-PDFReader - Make Any Scanned PDF Selectable',
     template: '%s | OCR-PDFReader',
   },
   description:
-    'Free, private, in-browser OCR tool. Upload a scanned PDF and instantly extract selectable text — page by page, no account needed, your file never leaves your device.',
+    'Free, private, in-browser OCR tool. Upload a scanned PDF and instantly extract selectable text, page by page, no account needed, your file never leaves your device.',
   keywords: [
     'OCR PDF',
     'make PDF selectable',
@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
                 'On-demand page OCR',
                 'Side-by-side original and text view',
                 'Supports 12+ languages',
-                'No file uploads — fully in-browser',
+                'No file uploads, fully in-browser',
                 'No account required',
                 'Free forever',
               ],
